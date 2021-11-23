@@ -1,0 +1,31 @@
+DevOps Tutorial:
+https://azure.microsoft.com/en-in/overview/devops-tutorial/#understanding
+
+DevOps Tutorial:
+https://www.youtube.com/watch?v=hQcFE0RD0cQ
+
+Azure Tutorial:
+https://www.youtube.com/watch?v=tDuruX7XSac
+
+Azure Fundamentals:
+https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/
+
+Azure DevOps Tutorial:
+https://www.youtube.com/watch?v=MOZMw5_fBFA
+
+Get started with Azure DevOps:
+https://docs.microsoft.com/en-in/learn/paths/evolve-your-devops-practices/
+
+Azure DevOps Tutorial:
+https://www.javatpoint.com/azure-devops
+https://www.javatpoint.com/microsoft-azure-devops
+
+Azure Pipelines:
+https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops
+
+YAML:
+https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=example%2Cyaml-example
+
+DevOps learning guide:
+https://github.com/kamranahmedse/developer-roadmap/blob/master/img/devops.png
+

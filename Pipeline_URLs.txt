@@ -1,0 +1,19 @@
+Microsoft-hosted agents:
+https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml
+https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md
+https://github.com/actions/virtual-environments/blob/main/images/win/Windows2022-Readme.md
+
+Versioning:
+https://ychetankumarsarma.medium.com/build-versioning-in-azure-devops-pipelines-94b5a79f80a0
+https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops#counter
+
+Runtime parameters:
+https://docs.microsoft.com/en-us/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&tabs=script
+https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops#parameters-to-select-a-template-at-runtime
+
+Conditionally assign a variable:
+https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops#conditional-insertion
+https://stackoverflow.com/questions/57532138/can-conditional-variable-assignment-be-done-in-azure-pipelines
+https://docs.microsoft.com/en-us/azure/devops/release-notes/2021/sprint-192-update#new-yaml-conditional-expressions
+https://thomasthornton.cloud/2021/08/04/conditional-variables-in-azure-devops-pipelines/
+

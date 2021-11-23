@@ -1,0 +1,68 @@
+name: $(Rev:r)_${{ parameters.artifact }}
+
+trigger: none
+
+pool: MyPool
+
+parameters:
+- name: artifact
+  displayName: Choose artifact to be built
+  type: string
+  default: Artifact 1
+  values:
+  - Artifact 1
+  - Artifact 2
+ 
+variables:
+- name: AR1_VER
+  value: 0.7.0
+- name: AR2_VER
+  value: 1.5.4
+  
+stages:
+
+- stage: BuildArtifact
+  displayName: Build Artifact
+  jobs:
+
+  - job: BuildArtifact1
+    displayName: Build Artifact 1
+    condition: eq('${{ parameters.artifact }}', 'Artifact 1')
+    timeoutInMinutes: 120
+    steps:
+    - script: |
+        cd /home/ubuntu/source/
+        echo "Update source"
+        echo "Set environment"
+        echo "Clean build"
+        echo $(AR1_VER) > /home/ubuntu/source/ar1-version.txt
+        echo "Build artifact"
+        cd /home/ubuntu/
+        rm -rf artifacts
+        mkdir artifacts
+        cp /home/ubuntu/source/ar1.tar.gz /home/ubuntu/artifacts
+
+  - job: BuildArtifact2
+    displayName: Build Artifact 2
+    condition: eq('${{ parameters.artifact }}', 'Artifact 2')
+    timeoutInMinutes: 120
+    steps:
+    - script: |
+        cd /home/ubuntu/source/
+        echo $(AR2_VER) > /home/ubuntu/source/ar2-version.txt
+        echo "Package artifact"
+        cd /home/ubuntu/
+        rm -rf artifacts
+        mkdir artifacts
+        cp /home/ubuntu/source/ar2.bin /home/ubuntu/artifacts
+
+- stage: PublishArtifact
+  displayName: Publish Artifact
+  jobs:
+  - job: PublishArtifact
+    displayName: Publish Artifact
+    steps:
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: /home/ubuntu/artifacts
+        artifactName: 'AzureArtifact'
