@@ -1,0 +1,140 @@
+NIST characteristics for cloud:
+> On demand
+	IT resources: (Bare metal) (On premises)
+		Compute (servers)
+		Storage (local disks, etc)
+		Network (bridge, firewall, gateways, routers, etc)
+		DB
+	Abstraction/Virtualization: Hidden but accessible when required.
+> Shared resource pool
+> Rapid elasticity
+	Scaling: Stretch and squeeze whenever required.
+> Broad network access
+	Internet
+> Metering
+	Pricing
+	
+Stakeholders:
+> User
+> Cloud service providers
+> Auditors
+> Brokers
+> Carrier
+
+Cloud computing: On demand IT resources through internet
+
+SOA: Service oriented architecture
+
+Cloud computing: Migrate on premises / co - located resources:
+> Abstraction/Virtualization
+> SOA
+> Internet
+
+Cloud:
+> Azure
+> AWS
+> Google
+> IBM
+
+Deployment models:
+> Public:
+	Everything is on cloud.
+> Private:
+	Everything is on premises.
+> Hybrid:
+	Public + Private.
+> Community
+
+Service models:
+Based on the level of abstraction.
+> IaaS
+	Only infrastructure is provided. Rest is done by user. Lowest level of abstraction. More control. Less convenient.
+> PaaS
+	Infrastructure and O/S related maintenance, etc is provided.
+> SaaS
+	Only software is used by user. Rest all is taken care by provider. Ex. Office 365. Highest level of abstraction. Less control. More convenient.
+
+Why cloud services:
+> Cost savings (because it is on demand)
+> Secure
+> Better services to customer
+> Undifferentiated availability (cloud related activites are taken by service providers)
+
+Scaling:
+> Horizontal:
+	Replicate resources. Add more similar resources. Add another server.
+> Vertical:
+	Increase/Decrease resources. Increase/Decrease capacity. Add more storage to existing server.
+	
+Advantages:
+> Economies of sale:
+	Rent resources and try ideas. If unsuccessful, scale down.
+> Consumption based model
+
+Azure global infrastructure:
+Geographical (continents) (6)
+	Regional (countries) (54)
+		Active directories / Management groups (Azure organization) (Azure resource manager)
+			Subscription
+				Resource groups, Storage account
+					Resources
+
+Regional:
+Availability zone (data centres)
+	Availability set
+		Fault domain, Update Domains
+			Server racks
+			
+Regions:
+Special azure regions
+Region pairs
+
+Server topology:
+End of row
+Top of rack
+Hybrid
+
+Picking region:
+Distance to user
+Cost
+
+VM services:
+Azure VMs
+VM scale sets
+App server
+Functions
+
+Data -> Compute
+Big Data -> Cloud compute
+
+5 V's of data:
+Velocity
+Veracity
+Value
+Volume
+Variety
+
+Types of data structures:
+Structured (relational / fixed schema) (Sql, Data warehouse)
+Semi structured (partially tabular data) (Cosmos, Mongo)
+Unstructured (Blob)
+
+Blob - Unlimited data size
+
+V Net: Virtual Network
+	Subnet
+		Private
+		Public (Routing table with access to internet)
+
+CIDR: Classless inter domain routing
+
+#lscpu
+
+6 R's of Migration:
+Retire
+Retain
+Refactoring
+Re-architect
+Repurchasing
+Re-platform
+
